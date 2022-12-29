@@ -51,11 +51,34 @@ public class Main {
         System.out.println("d: "+d);
         System.out.println("str: "+str);
 
-        //Nhập một số nguyen n từ bàn phím
+        //Nhập một số nguyen a từ bàn phím
+        System.out.println("Nhap 1 so nguyen:");
+        int a = sc.nextInt();
+        System.out.println("n: "+a);
 
-        //Tính tổng S= 1+2+3+...+n
+        //Tính tổng S= 1+2+3+...+a
+        int S = 0;
+        for(int i=1;i<=a;i++){
+            S = S+i;
+        }
+        System.out.println("S: "+S);
 
-        //Kiểm tra n có phải số nguyên tố hay không
+        //Kiểm tra a có phải số nguyên tố hay không
+        if (a==1){
+            System.out.println(a+" khong phai so nguyen to");
+        }else{
+            int b = 0;
+            for(int i=2;i<=a;i++){
+                if (i!=a && a%i==0){
+                    b++;
+                }
+            }
+            if (b==0){
+                System.out.println(a+" la so nguyen to");
+            }else{
+                System.out.println(a+" khong phai la so nguyen to");
+            }
+        }
     }
     static int tinhTong(int a,int b){
         return a+b;
