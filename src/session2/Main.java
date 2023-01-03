@@ -7,8 +7,8 @@ public class Main {
         //Xây dựng lớp tam giác có các thông tin gồm độ dài các cạnh
         // Sau đó viết các công thức tính chu vi và diên tích của tam giác
         tamGiac Tg = new tamGiac();
-        System.out.println(Tg.tinhChuVi());
-        System.out.println(Tg.tinhDienTich());
+        System.out.println("Chu vi của tam giác là: "+Tg.tinhChuVi());
+        System.out.println("Diện tích của tam giác là: "+Tg.tinhDienTich());
 
         int x = 10;
         x++;
