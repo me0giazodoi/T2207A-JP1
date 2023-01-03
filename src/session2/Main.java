@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args){
+        PhanSo Ps = new PhanSo();
+        System.out.println("Tổng 2 phân số là: "+Ps.add());
+        System.out.println("Hiệu 2 phân số là: "+Ps.sub());
+        System.out.println("Tich 2 phân số là: "+Ps.mul());
+        System.out.println("Thương 2 phân số là: "+Ps.div());
         //Xây dựng lớp tam giác có các thông tin gồm độ dài các cạnh
         // Sau đó viết các công thức tính chu vi và diên tích của tam giác
         tamGiac Tg = new tamGiac();
