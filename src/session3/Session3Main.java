@@ -15,7 +15,11 @@ public class Session3Main {
 
         Car[] cars = new Car[3];
         for (int i=0;i< cars.length;i++){
-            cars[i] = new Car("Honda","CRV");
+            cars[0] = new Car("Honda","CRV");
+            cars[1] = new Car("Honda","123");
+            cars[2] = new Car("Honda","456");
+            System.out.println(cars[i].getName());
+            System.out.println(cars[i].getBrand());
         }
     }
 }
