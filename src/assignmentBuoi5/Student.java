@@ -47,16 +47,16 @@ public class Student {
         this.diemTrungBinh = diemTrungBinh;
     }
     public char[] baoCaoKetQua() {
-        if (this.diemTrungBinh < 5) {
+        if (this.diemTrungBinh < 4) {
             System.out.println("Học sinh yếu");
         } else {
-            if (this.diemTrungBinh >= 5 && this.diemTrungBinh<6.5) {
+            if (this.diemTrungBinh<6.5) {
                 System.out.println("Học sinh trung bình");
             } else {
-                if (this.diemTrungBinh >= 6.5 && this.diemTrungBinh < 8) {
+                if (this.diemTrungBinh < 8) {
                     System.out.println("Học sinh khá");
                 } else {
-                    if (this.diemTrungBinh >= 8 && this.diemTrungBinh < 9) {
+                    if (this.diemTrungBinh < 9.5) {
                         System.out.println("Học sinh giỏi");
                     }else {
                         System.out.println("Học sinh Xuất sắc");
