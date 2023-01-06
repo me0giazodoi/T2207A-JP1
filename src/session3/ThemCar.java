@@ -1,11 +1,8 @@
 package session3;
 
-import assignmentBuoi5.Student;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Scanner;
 
 public class ThemCar {
     public static void main(String[] agrs){
