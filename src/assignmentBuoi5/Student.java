@@ -46,22 +46,24 @@ public class Student {
     public void setDiemTrungBinh(double diemTrungBinh) {
         this.diemTrungBinh = diemTrungBinh;
     }
-    public boolean kiemTra(){
-        if (getDiemTrungBinh()<5){
+    public char[] baoCaoKetQua() {
+        if (this.diemTrungBinh < 5) {
             System.out.println("Học sinh yếu");
-        }else{
-            if (getDiemTrungBinh()>=5 && getDiemTrungBinh()<7){
-                System.out.println("Học Sinh Trung Bình");
-            }else{
-                if (getDiemTrungBinh()>=7 && getDiemTrungBinh()<9){
+        } else {
+            if (this.diemTrungBinh >= 5 && this.diemTrungBinh<6.5) {
+                System.out.println("Học sinh trung bình");
+            } else {
+                if (this.diemTrungBinh >= 6.5 && this.diemTrungBinh < 8) {
                     System.out.println("Học sinh khá");
-                }else{
-                    if (getDiemTrungBinh()>=9 && getDiemTrungBinh()<=10){
-                        System.out.println("Học sinh xuất sắc");
+                } else {
+                    if (this.diemTrungBinh >= 8 && this.diemTrungBinh < 9) {
+                        System.out.println("Học sinh giỏi");
+                    }else {
+                        System.out.println("Học sinh Xuất sắc");
                     }
                 }
             }
         }
-        return false;
+        return new char[0];
     }
 }
