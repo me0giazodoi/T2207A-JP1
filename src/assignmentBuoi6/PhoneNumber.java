@@ -1,16 +1,16 @@
 package assignmentBuoi6;
 
+import java.util.ArrayList;
+
 public class PhoneNumber {
     private String name;
-    private int phone;
+    private ArrayList<String> phones = new ArrayList<>();
 
     public PhoneNumber() {
     }
 
-
-    public PhoneNumber(String name, int phone) {
+    public PhoneNumber(String name) {
         this.name = name;
-        this.phone = phone;
     }
 
     public String getName() {
@@ -21,11 +21,30 @@ public class PhoneNumber {
         this.name = name;
     }
 
-    public int getPhone() {
-        return phone;
+    public ArrayList<String> getPhones() {
+        return phones;
     }
 
-    public void setPhone(int phone) {
-        this.phone = phone;
+    public void setPhones(ArrayList<String> phones) {
+        this.phones = phones;
+    }
+
+    public void addPhone(String phone){
+        if(!phones.contains(phone)){
+            phones.add(phone);
+        }
+    }
+
+    public void updatePhone(String oldPhone,String newPhone){
+        if(phones.contains(oldPhone)){
+            int i = phones.indexOf(oldPhone);
+            phones.add(i,newPhone);
+        }
+    }
+
+    public void deletePhone(String phone){
+        if(phones.contains(phone)){
+            phones.remove(phone);
+        }
     }
 }
