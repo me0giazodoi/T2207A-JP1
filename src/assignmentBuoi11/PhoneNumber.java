@@ -4,14 +4,12 @@ import java.util.ArrayList;
 
 public class PhoneNumber {
     public String name;
-    public ArrayList<String> phones = new ArrayList<>();
+    public ArrayList<String> phones;
 
-    public PhoneNumber(String name) {
+    public PhoneNumber(String name, String phone) {
         this.name = name;
-    }
-
-    public PhoneNumber(ArrayList<String> phones) {
-        this.phones = phones;
+        this.phones = new ArrayList<>();
+        this.phones.add(phone);
     }
 
     public String getName() {
