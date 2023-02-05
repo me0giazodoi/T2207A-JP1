@@ -54,10 +54,20 @@ public class News implements INews {
 
     @Override
     public void Display() {
-        System.out.println(title);
-        System.out.println(publishDate);
-        System.out.println(author);
-        System.out.println(content);
-        System.out.println(averageRate);
+        System.out.println("Title: " + title);
+        System.out.println("Publish Date: " + publishDate);
+        System.out.println("Author: " + author);
+        System.out.println("Content: " + content);
+        System.out.println("Average Rate: " + averageRate);
+    }
+    public int[] RateList = new int[3];
+    public float AverageRate;
+    public void Calculate() {
+        int S = 0;
+        for (int i = 0; i<RateList.length; i++){
+            S += RateList[i];
+        }
+        System.out.println(S);
+        AverageRate = (float) S/RateList.length;
     }
 }
